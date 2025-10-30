@@ -4,6 +4,8 @@
     margin:0;
 }
 
+input, textarea{max-width: 100%;}
+
 
 body{
     font-family: "Inter", sans-serif;
@@ -23,9 +25,30 @@ body{
     background-color: white;
     padding: 2rem;
     border-radius: .5rem;
+    
+}
+
+form{
+    display: grid;
+    gap: 1rem;
+}
+.row-2{
+    display: grid;
+    gap: 1rem;
+}
+.full {grid-column: 1 / -1;}
+
+
+@media (min-width: 720px) {
+    .row-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .full{
+        grid-column: 1 / -1;
+    }
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    
+    padding: 1rem;
 }
