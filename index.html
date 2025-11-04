@@ -18,34 +18,43 @@
                     <div class="form-group row-2">
                         <div>
                         <label for="fname">First name </label>
-                         <input type="text" id="fname"  required>
+                         <input  type="text" id="fname"  required>
                          </div>
                          <div>
-                         <label for="lname"></label>Last name </label>
-                         <input type="text" id="fname" required>
+                         <label for="lname">Last name </label>
+                         <input  type="text" id="fname" required>
                          </div>
                     </div>
                     
                     <div class="form-group full">
-                        <label for="Email Adress"></label>Email Adress </label>
+                        
+                        <label  for="Email Adress">Email Adress </label>
                          <input type="email" id="email" required>
+                         
                     </div>
-                    <fieldset class="form-group full">
+                    <fieldset class="full">
                         <legend>Query Type *</legend>
-                        <label >
-                        <input type="radio" name="query-type" value="general" required>
+                        <div class="radio">
+                        <label class="label-radio">
+                            
+                        <input class="input-radio" type="radio" name="query-type" value="general" required>
                         General Enquiery
                         </label>
-                        <label >
-                        <input type="radio" name="query-type" value="support" />
-                        Support Request
+                        </div>
+                        <div class="form-group">
+                        <label>
+                            Support Request
+                        <input class="input-radio" type="radio" name="query-type" value="support" />
+                        
                         </label>
+                        </div>
                     </fieldset>
                     <div class="form-group full">
+                        <label for="message">Message</label>
                         <textarea name="Message" id="message"></textarea>
                     </div>
                     <div class="form-group full">
-                        <input type="checkbox" required>
+                        <input class="input-color" type="checkbox" required>
                         <label for=""> I consent to being contracted by the team *
                         
                         </label>
