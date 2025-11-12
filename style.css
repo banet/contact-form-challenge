@@ -35,13 +35,11 @@ input{
     border: 1px solid #7a7a7a;
     padding:.8rem;
     border-radius: 6px;
-    
     display: block;
     width: 100%;
 }
 
-
-input:focus, textarea:focus{
+input:focus:valid, textarea:focus:valid{
     outline: none;
     border-color: #4d4c4c;
     box-shadow: 0 0 0 3px #0c7c5920;
@@ -51,7 +49,6 @@ legend{
     margin-bottom: 1rem;
     font-size: 12px;
     color: #686868;
-   
 }
 
 
@@ -60,8 +57,6 @@ textarea {
     padding: 1.5rem .5rem;
     border-radius: 6px;
 }
-
-
 
 
 .container {
@@ -108,7 +103,6 @@ form {
     width: 100%;
     margin-left: 1rem;
 }
-
   .radio-group {
     display: flex;
     flex-direction: column; /* radio dugmad jedna pored druge */
@@ -116,7 +110,6 @@ form {
     width: 100%;
     gap: 1rem;
   }
-
 
 input[type="checkbox"] {
   padding-right: 1rem;  
